@@ -5,6 +5,6 @@ cd $1
 git --bare init
 echo '[gitweb]
   owner = "Fabricio Tuosto"' >> config
-echo '$1 project repository' > description
+echo $1' project repository' > description
 touch git-daemon-export-ok
 git update-server-info
